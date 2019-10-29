@@ -23,8 +23,8 @@ apt-get -y install nginx php$PHP_VERSION-fpm php$PHP_VERSION-mysql php$PHP_VERSI
 mkdir -p /var/www
 chown -R app:app /var/www
 mkdir -p /var/www/.ssh
-ln -sf /dev/stdout /var/log/nginx/access.log
-ln -sf /dev/stderr /var/log/nginx/error.log
+# ln -sf /dev/stdout /var/log/nginx/access.log
+# ln -sf /dev/stderr /var/log/nginx/error.log
 rm /etc/nginx/conf.d/*
 
 # Change max execution time to 180 seconds
